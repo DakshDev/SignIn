@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+
+<style>
+/*=================*/
+/*Sing In Form*/
+/*=================*/
+#Loginform>table{
+	width: 100%;
+}
+#Loginform>table tr td{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	margin: 5px;
+}
+#Loginform>table tr td input{
+	width: 100%;
+	padding: 10px 5px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+#Loginform>table tr td #signin-box{
+	font-weight: bold;
+	background-color: #3378F9;
+	color: white;
+	border: none;
+}
+#Loginform>table tr td #signin-box:hover{
+	background-color: #3758F9;
+}
+#Loginform>table tr td #signup-box{
+	font-weight: bold;
+	width: 60%;
+	background-color: #0ed145;
+	color: lightgray;
+	border: none;
+}
+#Loginform>table tr td #signup-box:hover{
+	background-color: #0fc846;
+}
+</style>
+
+<body>
+
+
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+											<!-- SignIn Form -->
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+<!-- Button trigger signin modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Sign In
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+
+
+      <!-- Start With -->
+        <div id="row-1-form" class="row">
+        	<div class="col-12">
+       		<form id="Loginform">
+						<table>
+	        				<tr>
+	        					<td><input type="email" name="email" placeholder="Email" required></td>
+	        				</tr>
+	
+	        				<tr>
+	        					<td><input type="password" name="password" placeholder="Password" required></td>
+	        				</tr>
+
+	        				<tr>
+	        					<td><input type="submit" name="SignIn" value="Sign In" id="signin-box"></td>
+	        				</tr>
+	
+	        				<tr>
+	        					<td><a href="#">Forget Password</a></td>
+	        				</tr>
+	
+	        				<tr>
+										<!-- Button trigger signup modal -->	        			
+	        					<td><input type="button" name="SignUp" value="Sign Up" id="signup-box" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2"></td>
+	        				</tr>
+	        	</table>
+	        </form>
+	        </div>
+	      </div>
+	     <!-- End -->
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+											<!-- SignUp Form -->
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+<!-- Button trigger signup modal -->
+<button type="button" name="SignUp" value="Sign Up" id="signup-box" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal2">Sign Up</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+       <!-- start with -->
+        <div id="row-1-form" class="row">
+        	<div class="col-12">
+       		<form id="Loginform">
+						<table>
+	        				<tr>
+	        					<td><input type="name" name="name" placeholder="Enter Name" required></td>
+	        				</tr>
+	
+	        				<tr>
+	        					<td><input type="number" name="phone" placeholder="Enter Phone Number" required></td>
+	        				</tr>
+
+	        				<tr>
+	        					<td><input type="email" name="email" placeholder="Enter Email" required></td>
+	        				</tr>
+	
+	        				<tr>
+	        					<td><input type="password" name="password" placeholder="Enter Password" required></td>
+	        				</tr>
+	
+	        				<tr>
+	        					<td><input type="submit" name="signup" value="Sign Up" id="signup-box"></td>
+	        				</tr>
+	        	</table>
+	        </form>
+	        </div>
+	      </div>
+			<!-- End -->
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
